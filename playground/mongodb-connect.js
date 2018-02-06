@@ -24,7 +24,8 @@ MongoClient.connect('mongodb://localhost:27017/Users', (err, client) => {
   //   console.log(JSON.stringify(result.ops, undefined, 2));
   // });
 
-  db.collection('Users').insertOne({
+  // INSERT TO DATABASE----
+  db.collection('User').insertOne({
     name: 'Daniel',
     age: 20,
     location: 'Long Beach'
